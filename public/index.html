@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NodeJS ExpressJS MongoDB Kick Starter App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/custom.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/styles/sunburst.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h3><i class="fa fa-bolt" aria-hidden="true"></i> NodeJS ExpressJS MongoDB Kick Starter App</h3>
+                <hr>
+                <p>Quickly start your webservices using light weight structure.</p>
+                <h3><i class="fa fa-file-code-o" aria-hidden="true"></i> SWAGGER UI</h3>
+                <hr>
+                <p>A POWERFUL INTERFACE TO YOUR API. </p>
+                <p><a class="btn btn-primary" href="http://swagger.io/specification/" target="_blank">Check out SWAGGER specs</a></p>
+                <p><a class="btn btn-primary" href="http://editor.swagger.io/#/">Click to go to SWAGGER Editor</a></p>
+                <p><a class="btn btn-primary" href="/api/swagger-ui" target="_blank">Click to go to pre installed SWAGGER UI.</a></p>
+                <br>
+                <h4>Any query? Shoot me an email:</h4>
+                <p><a href="mailto:shah.shreeji248@gmail.com">shah.shreeji248@gmail.com</a></p>
+            </div>
+            <div class="col-md-8">
+                <h3><i class="fa fa-book" aria-hidden="true"></i> Documentation:</h3>
+                <hr>
+                <div class="panel panel-primary">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Version Config</div>
+                    <div class="panel-body">
+                        <p>app.js:5</p>
+<pre class="prettyprint">
+var version = "v1"; //API VERSION SWITCHING
+</pre>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Database Config</div>
+                    <div class="panel-body">
+                        <p>Database/database.js:3</p>
+<pre class="prettyprint">
+mongoose.connect('mongodb://localhost/test'); // test is the name of the database
+</pre>
+<p><a href="http://mongoosejs.com/" target="_blank">Find out more about mongoose.</a></p>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Defining Database Tables</div>
+                    <div class="panel-body">
+                        <p>Database/database.js</p>
+<pre class="prettyprint">
+db.TableName = mongoose.model('TableName', { 
+            useranme: String,
+            password: String
+        });
+</pre>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Example Usage</div>
+                    <div class="panel-body">
+                        <p>Inside your module file import your database file</p>
+<pre class="prettyprint">
+var db = require("../../database/database.js");
+</pre>
+                        <p>And use your database object inside route like:</p>
+<pre class="prettyprint">
+db.User.find({email: req.body.email, password: req.body.password}, function (err, results) {
+    // do something with results        
+});
+</pre>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Editing API Documentation</div>
+                    <div class="panel-body">
+                        <p>Since this repo has SWAGGER-UI pre-installed.. go to /swagger-ui/ and open up <a href="/api/swagger-ui/swagger.json" target="_blank"><strong>swagger.json</strong></a> and add your API specs there.</p>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
