@@ -22,4 +22,4 @@ To configure database `Database/database.js:3`
 mongoose.connect('mongodb://localhost/test'); // test is the name of the database
 ````
 
-More documentation is available at [http://shreejibawa.github.io/node-expressjs-mongodb-quickstarter](here) as well as under yoru app http://localhost:3000 as well.
+More documentation is available at [http://shreejibawa.github.io/node-expressjs-mongodb-quickstarter](here) as well as under your app http://localhost:3000 as well.
