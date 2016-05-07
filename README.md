@@ -1,3 +1,5 @@
+A light weight architecture to quickly start developing your web services using NodeJS and MongoDB.
+
 Before using this stack please make sure you have followings installed:
 
 - MongoDB
@@ -20,4 +22,4 @@ To configure database `Database/database.js:3`
 mongoose.connect('mongodb://localhost/test'); // test is the name of the database
 ````
 
-More documentation is available under http://localhost:3000
+More documentation is available at [http://shreejibawa.github.io/node-expressjs-mongodb-quickstarter](here) as well as under yoru app http://localhost:3000 as well.
