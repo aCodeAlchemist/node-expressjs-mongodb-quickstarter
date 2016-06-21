@@ -15,9 +15,11 @@ var db = {};
 
 /** Users table here */
 db.User = mongoose.model('User', { 
-			useranme: String,
+			username: String,
+			//if you are using mongoose then unique has required=true if you not use null also consider unique and fire error 
 			email: {
 				type: String,
+				required:true,
 				unique: true,
 			},
 			password: String,
